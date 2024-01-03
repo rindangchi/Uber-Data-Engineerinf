@@ -15,7 +15,7 @@ Google Cloud Platform : Google Storage, Compute Instance, Big Query, Looker Stud
 Modern Data Pipeline : https://www.mage.ai/ <br>
 
 ## Data Set
-Dataset used for this project is Uber data set. <br>
+Dataset used for this project is Uber data set provided by the TLC Trip record data. This dataset contains some information such as pick up adn drop-off locatios, trip fare, payment types etc. <br>
 You can download the dataset here: https://github.com/rindangchi/Uber-Data-Engineerinf/blob/main/uber_data.csv <br>
 More information about the dataset can be found on this website: https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page <br>
 Below is the explanation about each fields on the dataset: <br>
