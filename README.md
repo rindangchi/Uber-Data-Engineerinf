@@ -14,6 +14,14 @@ Programming Language : Python
 Google Cloud Platform : Google Storage, Compute Instance, Big Query, Looker Studio
 Modern Data Pipeline : https://www.mage.ai/ 
 
+## Data Set
+Dataset used for this project is Uber data set. 
+You can download the dataset here: https://github.com/rindangchi/Uber-Data-Engineerinf/blob/main/uber_data.csv
+More information about the dataset can be found on this website: https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
+Below is the explanation about each fields on the dataset:
+
+
+
 
 
 
