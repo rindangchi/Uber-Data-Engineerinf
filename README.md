@@ -15,10 +15,18 @@ Google Cloud Platform : Google Storage, Compute Instance, Big Query, Looker Stud
 Modern Data Pipeline : https://www.mage.ai/ <br>
 
 ## Data Set
-Dataset used for this project is Uber data set provided by the TLC Trip record data. This dataset contains some information such as pick up adn drop-off locatios, trip fare, payment types etc. <br>
+Dataset used for this project is Uber data set provided by the TLC Trip record data. This dataset contains some information such as pick up and drop-off locatios, trip fare, payment types etc. <br>
 You can download the dataset here: https://github.com/rindangchi/Uber-Data-Engineerinf/blob/main/uber_data.csv <br>
 More information about the dataset can be found on this website: https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page <br>
 Below is the explanation about each fields on the dataset: <br>
+
+| Fields  | Description   |
+| ------------- | ------------- |
+| VendorID |  A code indicating the TPEP provider that provided the record. <br>
+1= Creative Mobile Technologies, LLC; 2= VeriFone Inc. |
+|tpep_pickup_datetime|The date and time when the meter was engaged. |
+|tpep_dropoff_datetime |The date and time when the meter was disengaged. |
+|Passenger_count |The number of passengers in the vehicle. |
 
 
 
