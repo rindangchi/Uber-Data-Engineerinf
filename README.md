@@ -41,6 +41,19 @@ Below is the explanation about each fields on the dataset: <br>
 |Tolls_amount|Total amount of all tolls paid in trip. |
 |Total_amount|The total amount charged to passengers. Does not include cash tips.|
 
+## Steps
+1. Extract the dataset and create data model that contains fact table and dimensional table
+2. xxx
+3. xxx
+4. xxx
+
+## Detailed Steps
+### 1. Create Data Model
+The first step is to create data model, in the data model it will contain fact table and dimensional tables. Fact table is table containing metrics or quantitative measure that will be used for analysis. It will contain foreign key comes from dimensional tables. In the other hand dimensional table will contain attributes that will be analyzed, columns in the dimensional table wil not change frequently. Dimensional tables will contain primary table that linked to fact table. Columns in these tables can be used for grouping & filtering. 
+Below is the data table that I created. I created this data model using lucid app. (https://lucid.app/)
+
+
+
 
 
 
