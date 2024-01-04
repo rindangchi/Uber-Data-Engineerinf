@@ -22,8 +22,7 @@ Below is the explanation about each fields on the dataset: <br>
 
 | Fields  | Description   |
 | ------------- | ------------- |
-| VendorID |  A code indicating the TPEP provider that provided the record.
-1= Creative Mobile Technologies, LLC; 2= VeriFone Inc. |
+| VendorID |  A code indicating the TPEP provider that provided the record. (1= Creative Mobile Technologies, LLC; 2= VeriFone Inc.) |
 |tpep_pickup_datetime|The date and time when the meter was engaged. |
 |tpep_dropoff_datetime |The date and time when the meter was disengaged. |
 |Passenger_count |The number of passengers in the vehicle. |
