@@ -55,6 +55,4 @@ Below is the data table that I created. I created this data model using lucid ap
 <br>
 
 
-![Uber Data Model (3)](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/b7dd6779-ba92-47a7-9d35-7b7799b04f23)
-
-
+![Uber Data Model (4)](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/48867305-6fd4-4624-8e33-5625bd869fd1)
