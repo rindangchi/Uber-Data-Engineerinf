@@ -213,6 +213,16 @@ In a new browser tab put the public ip address then following by port number. li
 ```
 http://34.142.208.76:6789/
 ```
+Before put the url and port to the browser, we need to allow our VM instance to access port 6789. To do that click on this part and choose Firmware section and create new rule.
+
+![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/79c8ce32-deec-4376-8429-84680f2be0f4)
+
+Choose create New Firewall Rule, here i have created a new rule named mage-aceess as shown in below image:
+
+![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/b44aeed7-8aa2-417b-a94e-fd69a60c14e7)
+
+
+
 
    
    
