@@ -100,5 +100,27 @@ Next we will create the fact table and the dimensions table.
 
 ![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/fc45dff6-e409-4491-9e06-18879bc2dc28)
 
+- Trip distance dimension table
 
+![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/d42e9248-1bdc-4b40-af06-743d6aeee453)
+
+- Rate dimension table
+
+![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/678b4714-bda1-4489-9c08-08ea01c87b4b)
+
+- pick up location and drop off location dimension table
+
+![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/b9b5d363-3a0a-423b-8554-341d09709e9f)
+
+![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/926536ec-1e36-4b43-aea8-c2844a3ed511)
+
+- Payment type dimension table
+  
+![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/050bfa60-5838-4b3f-adb7-f7ffb860e7a0)
+
+- Fact Table
+
+![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/58792366-2f09-4a98-b45b-2d3acbab0ef4)
+
+![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/11f6aa9b-49e8-4392-813f-7d91733a75b0)
 
