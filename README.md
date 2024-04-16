@@ -242,18 +242,18 @@ Now we will do the ETL process using the mage ai. What we will do is extract, me
 
      @data_loader
      def load_data_from_api(*args, **kwargs):
-    """
-    Template for loading data from API
-    """
-    url = 'https://storage.googleapis.com/uber-data-engineering-project-db/uber_data.csv'
-    response = requests.get(url)
+     """
+     Template for loading data from API
+     """
+     url = 'https://storage.googleapis.com/uber-data-engineering-project-db/uber_data.csv'
+     response = requests.get(url)
 
 
     return pd.read_csv(io.StringIO(response.text), sep=',')
 
 
-   @test
-   def test_output(output, *args) -> None:
+    @test
+    def test_output(output, *args) -> None:
     """
     Template code for testing the output of the block.
     """
@@ -262,9 +262,12 @@ Now we will do the ETL process using the mage ai. What we will do is extract, me
 ```
 
 3. Transform
-   Choose data transformation
+   Choose data transformation button --> Choose Generic template
+   After that copy all codes that we have prepared before in the jupyter notebook in the function block.
+
+   The full code can be downloaded here 
    
-4. Load
+5. Load
 
    
    
