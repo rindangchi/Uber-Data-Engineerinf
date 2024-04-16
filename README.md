@@ -87,5 +87,18 @@ Then re-check the data type again
 ![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/b1b71891-6bb0-4e26-983f-0a4e0688c91c)
 
 
+#### 2.2. Data Transformation Process
+Next we will create the fact table and the dimensions table.
+
+- Datetime dimension table
+
+![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/eebe500a-4bb7-49c5-a6d7-20a3238522a4)
+
+![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/e23e5ad0-db08-47fc-b778-d35b9c9d4d81)
+
+- Passenger count dimension table
+
+![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/fc45dff6-e409-4491-9e06-18879bc2dc28)
+
 
 
