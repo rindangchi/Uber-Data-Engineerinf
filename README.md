@@ -42,9 +42,10 @@ Below is the explanation about each fields on the dataset: <br>
 
 ## Steps
 1. Extract the dataset and create data model that contains fact table and dimensional table
-2. Convert the flat data model into the real data model using python 
-3. ETL using MAGE. AI
-4. xxx
+2. Convert the flat data model into the real data model using python
+3. Store data in the google cloud storage
+4. ETL using MAGE. AI
+5. xxx
 
 ## Detailed Steps
 ### 1. Create Data Model
@@ -124,3 +125,37 @@ Next we will create the fact table and the dimensions table.
 
 ![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/11f6aa9b-49e8-4392-813f-7d91733a75b0)
 
+
+### 3. Store Data in to Google Cloud Storage
+The next step we will store our csv data into google cloud storage
+
+####3.1. Create a new project
+First we will create a new project in the google cloud.
+1. Go to google cloud console : https://console.cloud.google.com/ . Then Create new project.
+
+   ![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/841e2167-5b2b-480f-a080-a45dc92cde29)
+
+   After that put the project name
+
+   ![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/44030436-38d2-43fc-b7cb-3713065a7204)
+
+   Here i created project named Uber Data Engineering
+
+2. Next go to Cloud Storage, the place where we will store our data. You will find the Cloud Storage option in the left side of the site.
+   
+   ![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/d0538feb-4db5-4583-ad41-0da5dc9c5bd7)
+
+   Once you are in the cloud storage section, then create a new bucket, by pressing the create button. Here I already create a bucket listed here. 
+
+   ![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/192bc416-905e-4848-936b-16194189c96d)
+
+   After a bucket is created, next step is to upload the csv file to the bucket.
+  
+   ![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/844182b1-6be1-4e29-9e6d-75c5d15ca03b)
+
+   After uploading the csv file, we need to make the file public, so we can access it.
+
+   
+
+   
+   
