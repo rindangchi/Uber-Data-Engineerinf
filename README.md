@@ -202,9 +202,17 @@ Next is to install MAge
 sudo pip3 install mage-ai
 ```
 
-Then start the project by putting 
+Then create a new project by putting below code
 
+```
+mage start <project name>
+```
 
+Then a port will be appear. 
+In a new browser tab put the public ip address then following by port number. like below example:
+```
+http://34.142.208.76:6789/
+```
 
    
    
