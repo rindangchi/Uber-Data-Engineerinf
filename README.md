@@ -154,8 +154,24 @@ First we will create a new project in the google cloud.
    ![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/844182b1-6be1-4e29-9e6d-75c5d15ca03b)
 
    After uploading the csv file, we need to make the file public, so we can access it.
+   To make it public, first make sure that you change the permission ninto fine grained.
 
-   
+   <img width="766" alt="image" src="https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/16773148-5f49-45b7-a282-a676b4cf9bae">
+
+   Then change the access into public.
+
+   ![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/f14a459d-f719-4bf6-9719-c65f83412020)
+
+### 4. Deploy MAGE in the compute engine in the Google Cloud Project
+Next we will create a compute engine to deploy the Mage. ai. The compute engine here is a virtual machine or computer that we can switch it on or off. 
+In the left side choose compute engine like below:
+
+![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/6f76753a-46df-41d8-aa3f-66ad1c747e55)
+
+Next create the new instance, here I already create a new instance as below:
+
+![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/581fe937-3a62-4571-a17b-50831630a27f)
+
 
    
    
