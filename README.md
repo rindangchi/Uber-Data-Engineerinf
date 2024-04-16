@@ -42,7 +42,7 @@ Below is the explanation about each fields on the dataset: <br>
 
 ## Steps
 1. Extract the dataset and create data model that contains fact table and dimensional table
-2. xxx
+2. Convert the flat data model into the real data model using python 
 3. xxx
 4. xxx
 
@@ -56,3 +56,30 @@ Below is the data table that I created. I created this data model using lucid ap
 
 
 ![Uber Data Model (4)](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/48867305-6fd4-4624-8e33-5625bd869fd1)
+
+
+### 2. Data Cleaning & Transformation : Convert the flat data model into the real data model using python 
+The next step is to convert the flat data model that we have created in lucid.app into the real fact and dimension table. In this step we will use python programming in jupyter. This steps is also called the cleaning & transformation steps, which in this step we will first cleaning the data and next we will transfor the data into fact table and dimensional table that we have designed before in the data model.
+
+#### 2.1. Data cleaning Process
+The data cleaning process is described below. 
+<br>
+- First, read the uber data which is in csv file:
+
+![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/7340ca9a-1f0a-4599-8a99-aa936abf9a63)
+
+- Second, we need to check if all data is in the correct data type or not. 
+
+![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/327d509b-8f57-45e3-b10b-d535a5516454)
+
+The date columns do not have correct data types, so need to convert the data type first
+![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/8c457641-c95f-4c50-8fb3-d42277da220e)
+
+Then re-check the data type again
+
+![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/835b213c-fa81-438f-8558-ef00a8679a26)
+
+
+
+
+
