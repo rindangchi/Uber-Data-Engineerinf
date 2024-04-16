@@ -162,7 +162,7 @@ First we will create a new project in the google cloud.
 
    ![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/f14a459d-f719-4bf6-9719-c65f83412020)
 
-### 4. Deploy MAGE in the compute engine in the Google Cloud Project
+### 4. Create compute engine in the Google Cloud Project
 Next we will create a compute engine to deploy the Mage. ai. The compute engine here is a virtual machine or computer that we can switch it on or off. 
 In the left side choose compute engine like below:
 
@@ -171,6 +171,39 @@ In the left side choose compute engine like below:
 Next create the new instance, here I already create a new instance as below:
 
 ![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/581fe937-3a62-4571-a17b-50831630a27f)
+
+After the instance is created we can launch the instance by just clicking the SSH in the right side. 
+It will open up a new pop up, then in this pop up we will install some required setting and libraries.
+
+<img width="653" alt="image" src="https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/375285d3-5430-47aa-b8bd-89b6287217ba">
+
+Install the below setting and libraries in the virtual machine
+
+```
+# Install Python and pip 
+sudo apt-get update
+
+sudo apt-get install python3-distutils
+
+sudo apt-get install python3-apt
+
+sudo apt-get install wget
+
+wget https://bootstrap.pypa.io/get-pip.py
+
+sudo python3 get-pip.py
+
+```
+
+Next is to install MAge 
+
+```
+# Install Mage
+sudo pip3 install mage-ai
+```
+
+Then start the project by putting 
+
 
 
    
