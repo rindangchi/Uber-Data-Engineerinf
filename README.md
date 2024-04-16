@@ -221,8 +221,50 @@ Choose create New Firewall Rule, here i have created a new rule named mage-acees
 
 ![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/b44aeed7-8aa2-417b-a94e-fd69a60c14e7)
 
+Now you will able to access the Mage site.
 
 
+### 5. ETL process in MAGE AI
+Now we will do the ETL process using the mage ai. What we will do is extract, means extracting data from the google data storage, transform means we will transform the data into fact table and dimension table using the python code we have created before, and the last is we will load the data into target system which is google bigquery.
+1. Extract
+   - Choose data loader --> Choose API
+   - Put the url in the code
+     Here is the code example:
+```
+     import io
+     import pandas as pd
+     import requests
+     if 'data_loader' not in globals():
+     from mage_ai.data_preparation.decorators import data_loader
+     if 'test' not in globals():
+     from mage_ai.data_preparation.decorators import test
+
+
+     @data_loader
+     def load_data_from_api(*args, **kwargs):
+    """
+    Template for loading data from API
+    """
+    url = 'https://storage.googleapis.com/uber-data-engineering-project-db/uber_data.csv'
+    response = requests.get(url)
+
+
+    return pd.read_csv(io.StringIO(response.text), sep=',')
+
+
+   @test
+   def test_output(output, *args) -> None:
+    """
+    Template code for testing the output of the block.
+    """
+    assert output is not None, 'The output is undefined'
+   
+```
+
+3. Transform
+   Choose data transformation
+   
+4. Load
 
    
    
