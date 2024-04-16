@@ -266,8 +266,12 @@ Now we will do the ETL process using the mage ai. What we will do is extract, me
    After that copy all codes that we have prepared before in the jupyter notebook in the function block.
 
    The full code can be downloaded here 
+
+   https://github.com/rindangchi/Uber-Data-Engineering/blob/main/transformer-uber_transformation.py
    
 5. Load
+   Next we will load the data into the  target system, we will load it into big query.
+   
 
    
    
