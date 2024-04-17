@@ -195,6 +195,15 @@ sudo python3 get-pip.py
 
 ```
 
+Install Google Cloud 
+
+```
+# Install Google Cloud Library
+sudo pip3 install google-cloud
+
+sudo pip3 install google-cloud-bigquery
+```
+
 Next is to install MAge 
 
 ```
@@ -296,4 +305,60 @@ Now we will do the ETL process using the mage ai. What we will do is extract, me
      Put the key in the io_config.yaml file. 
 
      ![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/8edfbfa0-fb12-4d61-a5e5-4bcef96a930f)
+
+
+   After copy and save all the required key. Now we go to the BigQuery. Follow the below steps:
+
+   - Search BigQuery on the search bar, and choose BigQuery 
+
+     ![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/69a960ba-61f6-4f98-9928-aabfafcefe69)
+
+     
+   - It will open the BigQuery section, then create new dataset
+
+     ![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/ac510891-9325-4500-99c7-fcd550e99b48)
+
+     Here I have created a dataset before like below:
+
+     <img width="960" alt="image" src="https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/a3ba4909-a243-4617-b0c5-f52270f19e6c">
+
+   - To load all the table into dataset we will use below code, this code is placed in the load_bq block. 
+
+```
+from mage_ai.settings.repo import get_repo_path
+from mage_ai.io.bigquery import BigQuery
+from mage_ai.io.config import ConfigFileLoader
+from pandas import DataFrame
+from os import path
+
+if 'data_exporter' not in globals():
+    from mage_ai.data_preparation.decorators import data_exporter
+
+
+@data_exporter
+def export_data_to_big_query(data, **kwargs) -> None:
+    """
+    Template for exporting data to a BigQuery warehouse.
+    Specify your configuration settings in 'io_config.yaml'.
+
+    Docs: https://docs.mage.ai/design/data-loading#bigquery
+    """
+    config_path = path.join(get_repo_path(), 'io_config.yaml')
+    config_profile = 'default'
+
+    for key, value in data.items():
+        table_id = f'uber-data-engineering-411908.uber_dataengineering_project.{key}'
+        BigQuery.with_config(ConfigFileLoader(config_path, config_profile)).export(
+            DataFrame(value),
+            table_id,
+            if_exists='replace',  # Specify resolution policy if table name already exists
+        )
+   ```
+
+  - After we run the code, all table will be successfully loaded in the bigQuery as can be seen below:
+
+    <img width="960" alt="image" src="https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/7d523b93-0819-49e4-b8cc-0ea0867d07d0">
+
+
+     
 
