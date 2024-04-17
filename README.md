@@ -41,11 +41,13 @@ Below is the explanation about each fields on the dataset: <br>
 |Total_amount|The total amount charged to passengers. Does not include cash tips.|
 
 ## Steps
-1. Extract the dataset and create data model that contains fact table and dimensional table
-2. Convert the flat data model into the real data model using python
-3. Store data in the google cloud storage
-4. ETL using MAGE. AI
-5. xxx
+1. Create data model design that contains fact table and dimensional table
+2. Create python code to convert the data model into real fact table and dimension table
+3. Store and extract dataset in the google cloud storage
+4. Create Compute Engine in Google cloud project
+5. ETL process using Mage Ai
+6. Analytics in Google Big Query
+7. Data Visualization : Create dashboard in Looker
 
 ## Detailed Steps
 ### 1. Create Data Model
@@ -59,7 +61,7 @@ Below is the data table that I created. I created this data model using lucid ap
 ![Uber Data Model (4)](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/48867305-6fd4-4624-8e33-5625bd869fd1)
 
 
-### 2. Convert the flat data model into the real data model using python 
+### 2. Create python code to convert the data model into real fact table and dimension table
 The next step is to convert the flat data model that we have created in lucid.app into the real fact and dimension table. In this step we will use python programming in jupyter. In this step we will do cleaning & transformation, which in this step we will first cleaning the data and next we will transform the data into fact table and dimensional table that we have designed before in the data model.
 
 #### 2.1. Data cleaning Process
@@ -126,7 +128,7 @@ Next we will create the fact table and the dimensions table.
 ![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/11f6aa9b-49e8-4392-813f-7d91733a75b0)
 
 
-### 3. Store Data in to Google Cloud Storage
+### 3. Store and extract dataset in the google cloud storage
 The next step we will store our csv data into google cloud storage
 
 #### 3.1. Create a new project
@@ -233,7 +235,7 @@ Choose create New Firewall Rule, here i have created a new rule named mage-acees
 Now you will able to access the Mage site.
 
 
-### 5. ETL process in MAGE AI
+### 5. ETL process using Mage Ai
 Now we will do the ETL process using the mage ai. What we will do is extract, means extracting data from the google data storage, transform means we will transform the data into fact table and dimension table using the python code we have created before, and the last is we will load the data into target system which is google bigquery.
 1. Extract
    - Choose data loader --> Choose API
@@ -359,6 +361,8 @@ def export_data_to_big_query(data, **kwargs) -> None:
 
     <img width="960" alt="image" src="https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/7d523b93-0819-49e4-b8cc-0ea0867d07d0">
 
-
+6. Analytics in Google Big Query
+   
+7. Data Visualization : Create dashboard in Looker
      
 
