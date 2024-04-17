@@ -41,7 +41,7 @@ Below is the explanation about each fields on the dataset: <br>
 |Total_amount|The total amount charged to passengers. Does not include cash tips.|
 
 ## Steps
-1. Create data model design that contains fact table and dimensional table
+1. [Create data model design that contains fact table and dimensional table](#1.-Create-Data-Model)
 2. Create python code to convert the data model into real fact table and dimension table
 3. Store and extract dataset in the google cloud storage
 4. Create Compute Engine in Google cloud project
