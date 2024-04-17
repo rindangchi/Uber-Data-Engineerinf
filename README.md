@@ -362,6 +362,13 @@ def export_data_to_big_query(data, **kwargs) -> None:
     <img width="960" alt="image" src="https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/7d523b93-0819-49e4-b8cc-0ea0867d07d0">
 
 ### Analytics in Google Big Query
+After we successfully load the data into Big Query, now we are enable to do some analytics. For example I will do below analytics:
+
+1. Find the average fare amount per vendor
+2. Find the average tip amaount per payment type
+3. Find top 10 pick up locations based on the number of trips
+4. Find the total number of trips by passanger count
+5. Find the average fare amount by hour of the day
    
 ### Data Visualization in Looker
      
