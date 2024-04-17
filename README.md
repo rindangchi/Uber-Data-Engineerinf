@@ -41,7 +41,7 @@ Below is the explanation about each fields on the dataset: <br>
 |Total_amount|The total amount charged to passengers. Does not include cash tips.|
 
 ## Steps
-1. [Create data model design that contains fact table and dimensional table](#1.-Create-Data-Model)
+1. [Create data model design that contains fact table and dimensional table](#Create-Data-Model)
 2. Create python code to convert the data model into real fact table and dimension table
 3. Store and extract dataset in the google cloud storage
 4. Create Compute Engine in Google cloud project
@@ -50,7 +50,7 @@ Below is the explanation about each fields on the dataset: <br>
 7. Data Visualization : Create dashboard in Looker
 
 ## Detailed Steps
-### 1. Create Data Model
+### Create Data Model
 The first step is to create data model, data modelling is a process to organize elements of the data and standarize how they relates each other. 
 In the data model it will contain fact table and dimensional tables. Fact table is table containing metrics or quantitative measure that will be used for analysis, for example amount, tax_charge, transaction etc. It will contain foreign key comes from dimensional tables. In the other hand dimensional table will contain attributes that will be analyzed, columns in the dimensional table wil not change frequently, for example location, product name, etc. Dimensional tables will contain primary key that linked to fact table. Columns in these tables can be used for grouping & filtering. 
 Below is the data table that I created. I created this data model using lucid app. (https://lucid.app/)
