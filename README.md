@@ -46,8 +46,8 @@ Below is the explanation about each fields on the dataset: <br>
 3. [Store and extract dataset in the google cloud storage](#Store-and-extract-dataset-in-the-google-cloud-storage)
 4. [Create Compute Engine in Google cloud project](#Create-Compute-Engine-in-Google-cloud-project)
 5. [ETL process using Mage Ai](#ETL-process-using-Mage-Ai)
-6. [Analytics in Google Big Query](#6.Analytics-in-Google-Big-Query)
-7. [Data Visualization in Looker](#7.Data-Visualization-in-Looker)
+6. [Analytics in Google Big Query](#Analytics-in-Google-Big-Query)
+7. [Data Visualization in Looker](#Data-Visualization-in-Looker)
 
 ## Detailed Steps
 ### Create Data Model
@@ -64,7 +64,7 @@ Below is the data table that I created. I created this data model using lucid ap
 ### Create python code to convert the data model into real fact table and dimension table
 The next step is to convert the flat data model that we have created in lucid.app into the real fact and dimension table. In this step we will use python programming in jupyter. In this step we will do cleaning & transformation, which in this step we will first cleaning the data and next we will transform the data into fact table and dimensional table that we have designed before in the data model.
 
-#### 2.1. Data cleaning Process
+#### 1. Data cleaning Process
 The data cleaning process is described below. 
 <br>
 - First, make sure that all data is in the correct data type
@@ -90,7 +90,7 @@ Then re-check the data type again
 ![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/b1b71891-6bb0-4e26-983f-0a4e0688c91c)
 
 
-#### 2.2. Data Transformation Process
+#### 2. Data Transformation Process
 Next we will create the fact table and the dimensions table.
 
 - Datetime dimension table
@@ -131,9 +131,9 @@ Next we will create the fact table and the dimensions table.
 ### Store and extract dataset in the google cloud storage
 The next step we will store our csv data into google cloud storage
 
-#### 3.1. Create a new project
+#### 1. Create a new project
 First we will create a new project in the google cloud.
-1. Go to google cloud console : https://console.cloud.google.com/ . Then Create new project.
+1.1. Go to google cloud console : https://console.cloud.google.com/ . Then Create new project.
 
    ![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/841e2167-5b2b-480f-a080-a45dc92cde29)
 
@@ -143,7 +143,7 @@ First we will create a new project in the google cloud.
 
    Here i created project named Uber Data Engineering
 
-2. Next go to Cloud Storage, the place where we will store our data. You will find the Cloud Storage option in the left side of the site.
+1.2. Next go to Cloud Storage, the place where we will store our data. You will find the Cloud Storage option in the left side of the site.
    
    ![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/d0538feb-4db5-4583-ad41-0da5dc9c5bd7)
 
@@ -272,7 +272,7 @@ Now we will do the ETL process using the mage ai. What we will do is extract, me
    
 ```
 
-3. Transform
+2. Transform
    Choose data transformation button --> Choose Generic template
    After that copy all codes that we have prepared before in the jupyter notebook in the function block.
 
@@ -280,7 +280,7 @@ Now we will do the ETL process using the mage ai. What we will do is extract, me
 
    https://github.com/rindangchi/Uber-Data-Engineering/blob/main/transformer-uber_transformation.py
    
-5. Load
+3. Load
    Next we will load the data into the  target system, we will load it into big query.
    To load the data choose data exporter --> Pyhthon --> BigQuery because i want to load my data into big query. Then give name to the loader block.Here you will see the code block. 
    There will be one required step that need to perform to make the virtual machine can communicate with Bigquery, we need to add the key in the io_config.yaml file.
@@ -361,8 +361,8 @@ def export_data_to_big_query(data, **kwargs) -> None:
 
     <img width="960" alt="image" src="https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/7d523b93-0819-49e4-b8cc-0ea0867d07d0">
 
-6.Analytics in Google Big Query
+### Analytics in Google Big Query
    
-7.Data Visualization in Looker
+### Data Visualization in Looker
      
 
