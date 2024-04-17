@@ -44,7 +44,7 @@ Below is the explanation about each fields on the dataset: <br>
 1. [Create data model design that contains fact table and dimensional table](#Create-Data-Model)
 2. [Create python code to convert the data model into real fact table and dimension table](#Create-python-code-to-convert-the-data-model-into-real-fact-table-and-dimension-table)
 3. [Store and extract dataset in the google cloud storage](#Store-and-extract-dataset-in-the-google-cloud-storage)
-4. [Create Compute Engine in Google cloud project](#Create-Compute-Engine-in-Google-cloud-project)
+4. [Create Compute Engine in Google cloud project](#Create-compute-engine-in-the-Google-Cloud-Project)
 5. [ETL process using Mage Ai](#ETL-process-using-Mage-Ai)
 6. [Analytics in Google Big Query](#Analytics-in-Google-Big-Query)
 7. [Data Visualization in Looker](#Data-Visualization-in-Looker)
