@@ -129,7 +129,7 @@ Next we will create the fact table and the dimensions table.
 ### 3. Store Data in to Google Cloud Storage
 The next step we will store our csv data into google cloud storage
 
-####3.1. Create a new project
+#### 3.1. Create a new project
 First we will create a new project in the google cloud.
 1. Go to google cloud console : https://console.cloud.google.com/ . Then Create new project.
 
@@ -265,13 +265,35 @@ Now we will do the ETL process using the mage ai. What we will do is extract, me
    Choose data transformation button --> Choose Generic template
    After that copy all codes that we have prepared before in the jupyter notebook in the function block.
 
-   The full code can be downloaded here 
+   The full code can be shown here : 
 
    https://github.com/rindangchi/Uber-Data-Engineering/blob/main/transformer-uber_transformation.py
    
 5. Load
    Next we will load the data into the  target system, we will load it into big query.
-   
+   To load the data choose data exporter --> Pyhthon --> BigQuery because i want to load my data into big query. Then give name to the loader block.Here you will see the code block. 
+   There will be one required step that need to perform to make the virtual machine can communicate with Bigquery, we need to add the key in the io_config.yaml file.
+   To get the key kindly follow below step:
+   - In the project site write API & Services on the search bar then choose API & Services
+
+     ![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/a0a0c7b7-dbdd-4883-b965-40ff14c648fa)
+
+   - Choose Credentials
+
+     ![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/f54326dd-197e-4dc0-80b2-88769c466d0c)
+
+
+   - Choose Create Credential --> Service Account 
+
+     ![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/477dab39-bdf1-467a-b3dd-45dcb3708220)
 
    
-   
+   - Here I have created a new service account credential like below
+
+     <img width="960" alt="image" src="https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/9205b1b1-4f8a-498d-a9d7-f68470d787f9">
+
+   - Click on the new service account then choose key tab and click Add Key, then choose JSON. There will be a JSON file downloaded containing all information about the key.
+     Put the key in the io_config.yaml file. 
+
+     ![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/8edfbfa0-fb12-4d61-a5e5-4bcef96a930f)
+
