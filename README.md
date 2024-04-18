@@ -168,7 +168,7 @@ First we will create a new project in the google cloud.
 Next we will create a compute engine to deploy the Mage. ai. The compute engine here is a virtual machine or computer that we can switch it on or off. 
 In the left side choose compute engine like below:
 
-![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/6f76753a-46df-41d8-aa3f-66ad1c747e55)
+![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/dd824fe9-0b64-405f-a696-c3eb518e78a4)
 
 Next create the new instance, here I already create a new instance as below:
 
