@@ -365,11 +365,17 @@ def export_data_to_big_query(data, **kwargs) -> None:
 After we successfully load the data into Big Query, now we are enable to do some analytics. For example I will do below analytics:
 
 1. Find the average fare amount per vendor
-2. Find the average tip amaount per payment type
-3. Find top 10 pick up locations based on the number of trips
-4. Find the total number of trips by passanger count
-5. Find the average fare amount by hour of the day
+
+   ![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/d4a09a5a-6d0c-4ea2-9e14-4fdb94a726f6)
+
+   ![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/c06247f9-a763-4501-b8b7-33d2e4df2d52)
+
    
+3. Find the average tip amaount per payment type
+4. Find top 10 pick up locations based on the number of trips
+5. Find the total number of trips by passanger count
+6. Find the average fare amount by hour of the day
+
 ### Data Visualization in Looker
      
 
