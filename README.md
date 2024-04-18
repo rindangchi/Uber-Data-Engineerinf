@@ -372,9 +372,15 @@ After we successfully load the data into Big Query, now we are enable to do some
 
    
 3. Find the average tip amaount per payment type
-4. Find top 10 pick up locations based on the number of trips
-5. Find the total number of trips by passanger count
-6. Find the average fare amount by hour of the day
+
+   ![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/e1c60be3-211d-4a00-9845-73c883585c9c)
+
+   ![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/fce9c27d-d1b2-42af-a76a-594cfaed526e)
+
+   
+5. Find top 10 pick up locations based on the number of trips
+6. Find the total number of trips by passanger count
+7. Find the average fare amount by hour of the day
 
 ### Data Visualization in Looker
      
