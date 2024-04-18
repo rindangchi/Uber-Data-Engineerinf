@@ -366,14 +366,25 @@ After we successfully load the data into Big Query, now we are enable to do some
 
 1. Find the average fare amount per vendor
 
-   ![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/d4a09a5a-6d0c-4ea2-9e14-4fdb94a726f6)
-
+   ```
+   SELECT VendorID, round(avg(fare_amount),2)
+   FROM `uber-data-engineering-411908.uber_dataengineering_project.fact_table`
+   group by VendorID
+   ```
    ![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/c06247f9-a763-4501-b8b7-33d2e4df2d52)
 
    
 3. Find the average tip amaount per payment type
+     ```
+     SELECT b.payment_type_name, round(avg(a.tip_amount),4) average_tip
+     from `uber-data-engineering-411908.uber_dataengineering_project.fact_table` a
+     join `uber-data-engineering-411908.uber_dataengineering_project.payment_type_dim` b
+     on a.payment_type_id = b.payment_type_id
+     group by b.payment_type_name
+     order by average_tip desc
 
-   ![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/e1c60be3-211d-4a00-9845-73c883585c9c)
+     ```
+   
 
    ![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/fce9c27d-d1b2-42af-a76a-594cfaed526e)
 
