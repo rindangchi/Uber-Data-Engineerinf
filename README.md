@@ -374,7 +374,7 @@ After we successfully load the data into Big Query, now we are enable to do some
    ![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/c06247f9-a763-4501-b8b7-33d2e4df2d52)
 
    
-3. Find the average tip amaount per payment type
+2. Find the average tip amaount per payment type
      ```
      SELECT b.payment_type_name, round(avg(a.tip_amount),4) average_tip
      from `uber-data-engineering-411908.uber_dataengineering_project.fact_table` a
@@ -389,7 +389,7 @@ After we successfully load the data into Big Query, now we are enable to do some
    ![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/fce9c27d-d1b2-42af-a76a-594cfaed526e)
 
    
-5. Find top 10 pick up locations based on the number of trips
+3. Find top 10 pick up locations based on the number of trips
   ```
   select count (*) counts, pickup_latitude, pickup_longitude
   from uber-data-engineering-411908.uber_dataengineering_project.pickup_location_dim
@@ -401,7 +401,7 @@ After we successfully load the data into Big Query, now we are enable to do some
 
   ![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/7c6828d3-df2f-4aac-84fa-12975b9acd84)
 
-7. Find the total number of trips by passanger count
+4. Find the total number of trips by passanger count
    ```
     select passenger_count, count(*) counts
     from uber-data-engineering-411908.uber_dataengineering_project.passenger_count_dim
@@ -413,8 +413,22 @@ After we successfully load the data into Big Query, now we are enable to do some
    ![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/ab91924d-bb53-4470-94a2-4d8bba0ecafc)
 
 
-8. Find the average fare amount by hour of the day
+5. Find the average fare amount by hour of the day
+
+   ```
+    select avg(a.fare_amount) average_fare_amount, b.pick_hour pickhour
+    from uber-data-engineering-411908.uber_dataengineering_project.fact_table a
+    join uber-data-engineering-411908.uber_dataengineering_project.date_time_dim b
+    on a.datetime_id = b.datetime_id
+    group by pickhour
+    order by average_fare_amount desc
+    limit 10;
+  ```
+
+![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/ac090dcb-1f08-4a84-a1d1-9a10bd81e40b)
+
 
 ### Data Visualization in Looker
+
      
 
