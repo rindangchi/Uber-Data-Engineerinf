@@ -402,7 +402,15 @@ After we successfully load the data into Big Query, now we are enable to do some
   ![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/7c6828d3-df2f-4aac-84fa-12975b9acd84)
 
 7. Find the total number of trips by passanger count
-8. Find the average fare amount by hour of the day
+   ```
+  select passenger_count, count(*) counts
+  from uber-data-engineering-411908.uber_dataengineering_project.passenger_count_dim
+  group by passenger_count
+  order by counts desc
+  limit 10
+   ```
+
+9. Find the average fare amount by hour of the day
 
 ### Data Visualization in Looker
      
