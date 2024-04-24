@@ -415,15 +415,15 @@ After we successfully load the data into Big Query, now we are enable to do some
 
 5. Find the average fare amount by hour of the day
 
-   ```
+    ```
     select avg(a.fare_amount) average_fare_amount, b.pick_hour pickhour
     from uber-data-engineering-411908.uber_dataengineering_project.fact_table a
     join uber-data-engineering-411908.uber_dataengineering_project.date_time_dim b
     on a.datetime_id = b.datetime_id
     group by pickhour
     order by average_fare_amount desc
-    limit 10;
-  ```
+    limit 10
+    ```
 
 ![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/ac090dcb-1f08-4a84-a1d1-9a10bd81e40b)
 
