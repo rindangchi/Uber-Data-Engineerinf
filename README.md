@@ -390,8 +390,19 @@ After we successfully load the data into Big Query, now we are enable to do some
 
    
 5. Find top 10 pick up locations based on the number of trips
-6. Find the total number of trips by passanger count
-7. Find the average fare amount by hour of the day
+  ```
+  select count (*) counts, pickup_latitude, pickup_longitude
+  from uber-data-engineering-411908.uber_dataengineering_project.pickup_location_dim
+  where pickup_longitude != 0 and pickup_latitude != 0
+  group by pickup_latitude, pickup_longitude
+  order by counts desc
+  limit 10
+  ```
+
+  ![image](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/7c6828d3-df2f-4aac-84fa-12975b9acd84)
+
+7. Find the total number of trips by passanger count
+8. Find the average fare amount by hour of the day
 
 ### Data Visualization in Looker
      
