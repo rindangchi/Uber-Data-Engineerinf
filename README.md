@@ -428,6 +428,6 @@ After we successfully load the data into Big Query, now we are enable to do some
 
 
 ### Data Visualization in Looker
-
      
+![Uber_Dashboard_page-0001](https://github.com/rindangchi/Uber-Data-Engineering/assets/10241058/a7c71a99-ab7f-4f2e-8d09-0441379b07ff)
 
